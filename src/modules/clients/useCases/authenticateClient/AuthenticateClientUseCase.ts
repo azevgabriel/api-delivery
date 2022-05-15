@@ -30,7 +30,7 @@ class AuthenticateClientUseCase {
 
     const token = sign(
       { username },
-      process.env.MD5_SECRET || '143a8ec9d29a46d1f0051847597cab74',
+      process.env.MD5_CLIENT_SECRET || '143a8ec9d29a46d1f0051847597cab74',
       {
         subject: clientExists.id,
         expiresIn: '1d',
