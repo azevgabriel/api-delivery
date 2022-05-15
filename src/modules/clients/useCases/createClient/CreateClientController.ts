@@ -1,5 +1,4 @@
 import { Request, Response } from 'express';
-import { Clients } from '@prisma/client';
 import { CreateClientUseCase } from './CreateClientUseCase';
 
 class CreateClientController {
